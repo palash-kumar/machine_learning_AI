@@ -81,7 +81,7 @@ Example:
 
 Data is fed to the neurons -> Prediction $3,000 -> Actual Price $3,500 -> Error Found _Too low by $500_ -> Backpropagation _Adjust weight to Increase future prediction_.  
 
-## 3. Linear regression
+## 4. Linear regression
 
 It finds the best straufgt kine to describe the relationship between teo things such as if house is big price is high, or if house is small price is low. 
 
@@ -103,14 +103,14 @@ It learns
 - It learns by reducing prediction error
 - It’s the foundation of machine learning
 
-## 4. WX+B 
-Where `W = Weight`, `X = Input`, `B = Bias`
-
-
 
 ## 5. ACTIVATION Functions
 
 Activation functions are essential mathematical equations in neural networks that introduce non-linearity to the model, enabling it to learn complex, non-linear patterns in data. Without them, deep neural networks would act as simple linear models. They determine if a neuron should activate ("fire") by mapping inputs to specific outputs, crucial for tasks like image recognition, NLP, and decision-making.
+
+$WX+B $
+
+Where `W = Weight`, `X = Input`, `B = Bias`
 
 Activation functions are used hidden layers.
 
@@ -173,3 +173,21 @@ Optimization of a model is done based on gradient descent
 Backpropagation er maddhome loss k komanor jonno weight optimize kora hoi gradient descent (Stochastic gradient descent, ADAM - Adaptive moment estimation) 
 
 ADAM Optimizer
+
+### Review
+
+> “Forward pass = guess.”
+
+> “Backpropagation = fix the weights.”
+
+> “Linear regression = best straight-line guess.”
+
+> “Activation = decision maker inside a neuron.”
+
+> Activation functions add non-linearity and decide how strongly a neuron fires.
+
+> **ReLU** (Default) takes only positive value, discard all 0 values
+
+> **Leaky ReLU** is Importent in Deep learning models
+
+> Except `Sigmoid` / `Softmx` other activation functions are used in input or hidden layers.
